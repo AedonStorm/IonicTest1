@@ -3,6 +3,10 @@ ion-content{
     --ion-background-color: linear-gradient(to bottom right, #F58524, #f92b7e) !important;
 }
 
+ion-tabs {
+
+}
+
 #svg-container
 {
   display: flex;
@@ -14,4 +18,30 @@ ion-content{
 {
   margin: 0 auto;
   display: block;
+
+  @-webkit-keyframes rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to { 
+      -webkit-transform: rotate(360deg);
+    }
+  }      
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transition-timing-function: ease;
+
+    @debug sin(pi()/4); // => 0.70711
+    @debug cos(45deg);  // => 0.70711
+  /*animation-iteration-count:infinite;
+  animation: 1s 0.4s ease fadeInAndSpin;*/
 }
+
+/*@keyframes fadeInAndSpin {
+
+    100% {
+        transform: rotate(90deg);
+    }
+
+}*/
